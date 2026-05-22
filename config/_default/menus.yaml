@@ -9,8 +9,8 @@ main:
   - name: Skills
     url: /#skills
     weight: 20
-  - name: Experience
-    url: /#experience
+  - name: Publications
+    url: /#publications
     weight: 30
   - name: Blog
     url: /#blog
