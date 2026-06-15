@@ -1,26 +1,34 @@
 ---
-title: "External-Camera Robot Navigation"
+title: "Visibility-Aware Navigation from External Cameras"
 date: 2026-06-15
-summary: "A graduation project on mobile robot navigation from external camera observations, combining geometric perception, state estimation, and learning-based control."
+weight: 10
+summary: "Thesis flagship: external-camera robot navigation that turns learned detector reliability into state-dependent planning uncertainty."
 tags:
-  - Robotics
-  - Computer Vision
-  - Sensor Fusion
-  - Autonomous Navigation
-  - Learning-Based Control
+  - robotics
+  - computer-vision
+  - sensor-fusion
+  - autonomous-navigation
+  - learning-based-control
+  - featured
 authors:
   - me
 tech_stack:
   - Python
   - ROS 2
   - Gazebo
-  - OpenCV
+  - YOLO
+  - Gaussian Processes
+  - Expected Free Energy
   - NumPy
   - SciPy
 links:
   - type: github
-    url: https://github.com/JoostLeliveld
-    label: GitHub
+    url: https://github.com/JoostLeliveld/UnembodiedNavigation
+    label: Repository
+  - type: custom
+    url: https://github.com/JoostLeliveld/UnembodiedNavigation/tree/main/paper_artifacts
+    label: Artifacts
+    icon: document-chart-bar
 featured: true
 status: "In progress"
 role: "Graduation Project"
@@ -28,29 +36,51 @@ role: "Graduation Project"
 
 ## Overview
 
-This graduation project investigates mobile robot navigation using an external fixed camera instead of relying only on onboard sensing. The system combines geometric computer vision, robot state estimation, and learning-based planning/control to navigate a mobile robot from start to goal using externally observed sensing.
+This graduation project investigates mobile robot navigation using a fixed external camera instead of relying only on onboard sensing. The system trains a detector in Gazebo, converts detector reliability into a spatial Gaussian Process, and uses that reliability as predictive camera covariance inside an expected-free-energy planner.
 
-The core question is how camera geometry, visibility, and sensor reliability should influence autonomous navigation decisions. I use simulation and robotics tooling to evaluate navigation behavior in controlled environments before moving toward more realistic deployment constraints.
+The core question is how camera geometry, visibility, and sensor reliability should influence autonomous navigation decisions before localization failure becomes a recovery problem.
+
+![External-camera warehouse setup](https://raw.githubusercontent.com/JoostLeliveld/UnembodiedNavigation/main/paper_artifacts/figures/problem_setup_camera.png)
+
+![External-camera navigation architecture](https://raw.githubusercontent.com/JoostLeliveld/UnembodiedNavigation/main/docs/media/system_architecture.svg)
 
 ## Why This Project
 
-External cameras can provide a useful global view of a robot and its environment, but they also introduce their own problems: perspective distortion, occlusion, calibration errors, and uncertainty about what the camera can reliably observe. This project is about making those constraints explicit instead of treating perception as a perfect input to the planner.
+External cameras can provide a useful global view of a robot and its environment, but they also introduce perspective distortion, occlusion, calibration sensitivity, and spatially uneven detection quality. This project makes those constraints explicit instead of treating perception as a perfect input to the planner.
 
-## What I Am Building
+## System
 
-The pipeline connects camera projection models, homography-based localization, robot dynamics, planning/control, and experiment logging. The goal is to make it easy to compare navigation behavior under different camera viewpoints, visibility assumptions, and sensing reliability settings.
+The pipeline is:
+
+```text
+Gazebo warehouse
+-> YOLO external-camera detector
+-> image-space bottom-centre observation
+-> BEV state estimate
+-> GP reliability query
+-> predictive camera covariance
+-> EFE route planner
+-> seeded campaign metrics
+```
 
 ## Highlights
 
-- Developed an external-camera navigation setup for a mobile robot using projection geometry and planar homography.
-- Combined robot dynamics, perception, and planning/control into a reproducible experimental pipeline.
-- Investigated how camera viewpoint, visibility, and sensing reliability affect navigation performance.
-- Designed experiments around autonomous navigation, sensor fusion, and real-world robotic constraints.
+- Built a ROS/Gazebo external-camera navigation stack with detector-to-pixel observation, BEV state estimation, and planner integration.
+- Trained and evaluated a simulated YOLO detector for robot localization under varying camera visibility.
+- Fit a GP reliability model and used it to provide state-dependent camera covariance to the planner.
+- Compared constant-covariance planning with visibility-aware planning in a seeded warehouse route-choice benchmark.
 
-## Tech
+## Public Result Snapshot
 
-The project is implemented mainly in Python and ROS 2, with simulation support through Gazebo. Computer vision components use camera projection models, homography-based localization, and image-space robot observations. The planning and evaluation pipeline combines robot dynamics, state estimation, and learning-based control methods.
+The public repository reports a paper-facing benchmark with four warehouse tasks and five seeds per condition:
 
-## Links
+| Condition | Planner | Clean reaches | Collisions | Other outcomes |
+| --- | --- | ---: | ---: | --- |
+| C1 | constant camera covariance | 12/20 | 8/20 | none |
+| C2 | visibility-aware covariance | 16/20 | 2/20 | 1 near-success, 1 infrastructure-invalid |
 
-- [GitHub profile](https://github.com/JoostLeliveld)
+## Public Repository Structure
+
+The repository is organized as a research artifact rather than just source code, with module pages for YOLO perception, GP covariance modeling, state estimation, EFE planning, experiments, figures, metrics, and reproduction commands.
+
+Current release gaps noted in the repository are the overview video, license, citation metadata, and artifact/data availability statement.

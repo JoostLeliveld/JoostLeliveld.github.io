@@ -34,13 +34,23 @@ sections:
   - block: portfolio
     id: projects
     content:
-      title: "Robotics Projects"
-      subtitle: "External perception, autonomous navigation, and learning-based control"
+      title: "Engineering Case Studies"
+      subtitle: "Perception, uncertainty, learning, control, and deployment on robotic systems"
       count: 0
       filters:
         folders:
           - projects
+      sort_by: Weight
+      sort_ascending: true
       buttons:
+        - name: Featured
+          tag: featured
+        - name: Robotics
+          tag: robotics
+        - name: AI Systems
+          tag: ai-systems
+        - name: Earlier Work
+          tag: earlier-work
         - name: All
           tag: '*'
       default_button_index: 0

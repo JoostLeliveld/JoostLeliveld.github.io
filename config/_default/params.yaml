@@ -185,6 +185,9 @@ hugoblox:
       - sensor fusion
       - ROS 2
       - learning-based control
+      - Isaac Lab
+      - reinforcement learning
+      - SystemVerilog
     # Quick action shortcuts in search modal
     quick_actions: []
 
