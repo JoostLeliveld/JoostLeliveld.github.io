@@ -1,13 +1,13 @@
 ---
-title: Publications
+title: Research & Reports
 date: 2026-05-22
 type: landing
 
 sections:
   - block: collection
     content:
-      title: Publications
-      text: ''
+      title: Research & Reports
+      text: Theses, reports, and technical writeups connected to robotics, computer vision, and autonomous systems.
       filters:
         folders:
           - publications

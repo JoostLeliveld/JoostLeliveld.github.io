@@ -1,5 +1,5 @@
 ---
-title: 'Projects'
+title: 'Robotics Projects'
 date: 2024-05-19
 type: landing
 
@@ -7,8 +7,8 @@ type: landing
 sections:
   - block: collection
     content:
-      title: Selected Projects
-      text: I enjoy making things. Here are a selection of projects that I have worked on over the years.
+      title: Selected Robotics Work
+      text: Projects around mobile robot navigation, external perception, simulation, sensor fusion, and learning-based control.
       filters:
         folders:
           - projects

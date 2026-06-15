@@ -19,9 +19,9 @@ hugoblox:
     # Schema.org type for structured data
     type: person                        # person | organization | local_business
     # Short tagline displayed on your site
-    tagline: "Student at TU Eindhoven"
+    tagline: "Robotics, computer vision, and learning-based control"
     # Site meta description for search engines and social sharing
-    description: "Personal site of Joost Leliveld — projects, publications, and notes."
+    description: "Personal site of Joost Leliveld, an MSc AI & Engineering Systems student at Eindhoven University of Technology working on robotics, computer vision, sensor fusion, and learning-based control."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: ""                          # Twitter/X handle for Twitter Cards (without @)
@@ -32,9 +32,12 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   theme:
     # Mode: 'light', 'dark', or 'system' (follows OS preference)
-    mode: dark
+    mode: system
     # Theme pack: name from data/themes/ or { light: "x", dark: "y" } for mix-and-match
-    pack: "default"
+    # Available packs: default, coffee, contrast, cupcake, dracula, marine,
+    # matcha, minimal, retro, solar, synthwave. Picked 'solar' for warm
+    # Solarized palette (distinctive vs the default purple/indigo).
+    pack: "solar"
     # Optional: Override theme pack colors
     colors:
       primary: ""                       # Tailwind palette name or hex (e.g., "indigo" or "#6366f1")
@@ -60,7 +63,10 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   typography:
     # Theme pack: name from data/fonts/
-    pack: "developer"
+    # Available: academic (Lora serif), developer, editorial, geometric,
+    # humanist, modern, system. Picked 'academic' for a serif look that
+    # feels more scholarly and less generic-template.
+    pack: "academic"
 
   # ────────────────────────────────────────────────────────────────────────────
   # LAYOUT
@@ -106,7 +112,7 @@ hugoblox:
     style: minimal                      # minimal | columns | centered
     language_switcher: true
     # Custom footer text (HTML supported)
-    text: ""
+    text: "Robotics, computer vision, and learning-based control from Eindhoven."
 
   # ────────────────────────────────────────────────────────────────────────────
   # COPYRIGHT
@@ -145,8 +151,8 @@ hugoblox:
       allow:
         - /
       disallow: []
-      note: "Guidance for AI crawlers - customize to match your public content."
-      contact: ""
+      note: "Public personal site with robotics projects, research reports, and technical notes by Joost Leliveld."
+      contact: "j.j.p.leliveld@student.tue.nl"
 
   # ────────────────────────────────────────────────────────────────────────────
   # CONTENT
@@ -173,7 +179,12 @@ hugoblox:
   search:
     enable: true
     # Trending/suggested search terms
-    suggestions: []
+    suggestions:
+      - robotics
+      - computer vision
+      - sensor fusion
+      - ROS 2
+      - learning-based control
     # Quick action shortcuts in search modal
     quick_actions: []
 

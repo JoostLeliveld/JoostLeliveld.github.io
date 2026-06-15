@@ -1,53 +1,41 @@
 ---
 # Leave the homepage title empty to use the site title
 title: ''
-summary: ''
+summary: 'Robotics, computer vision, and learning-based control work by Joost Leliveld.'
 date: 2026-05-22
 type: landing
 
 sections:
-  # Developer Hero - Gradient background with name, role, social, and CTAs
+  # Hero
   - block: dev-hero
     id: hero
     content:
       username: me
       greeting: "Hi, I'm"
       show_status: true
-      show_scroll_indicator: true
+      show_scroll_indicator: false
       typewriter:
-        enable: true
-        prefix: "I work on"
-        strings:
-          - "personal projects"
-          - "research"
-          - "code"
-        type_speed: 70
-        delete_speed: 40
-        pause_time: 2500
+        enable: false
       cta_buttons:
-        - text: View My Work
+        - text: Robotics Work
           url: "#projects"
           icon: arrow-down
-        - text: Get In Touch
+        - text: Contact
           url: "#contact"
           icon: envelope
     design:
       style: centered
       avatar_shape: circle
       animations: true
-      background:
-        color:
-          light: "#fafafa"
-          dark: "#0a0a0f"
       spacing:
-        padding: ["6rem", "0", "4rem", "0"]
+        padding: ["3rem", "0", "2rem", "0"]
 
-  # Filterable Portfolio - Alpine.js powered project filtering
+  # Projects
   - block: portfolio
     id: projects
     content:
-      title: "Projects"
-      subtitle: "A selection of things I've built"
+      title: "Robotics Projects"
+      subtitle: "External perception, autonomous navigation, and learning-based control"
       count: 0
       filters:
         folders:
@@ -58,48 +46,15 @@ sections:
       default_button_index: 0
     design:
       columns: 3
-      background:
-        color:
-          light: "#ffffff"
-          dark: "#0d0d12"
       spacing:
-        padding: ["4rem", "0", "4rem", "0"]
+        padding: ["3rem", "0", "3rem", "0"]
 
-  # Visual Tech Stack - Icons organized by category
-  - block: tech-stack
-    id: skills
-    content:
-      title: "Skills"
-      subtitle: "Tools and languages I work with"
-      categories:
-        - name: Languages
-          items:
-            - name: Python
-              icon: devicon/python
-        - name: Tools
-          items:
-            - name: Git
-              icon: devicon/git
-            - name: Linux
-              icon: devicon/linux
-            - name: VS Code
-              icon: devicon/vscode
-    design:
-      style: grid
-      show_levels: false
-      background:
-        color:
-          light: "#f5f5f5"
-          dark: "#08080c"
-      spacing:
-        padding: ["4rem", "0", "4rem", "0"]
-
-  # Publications
+  # Publications and reports
   - block: collection
     id: publications
     content:
-      title: Publications
-      subtitle: 'Papers, theses, and reports'
+      title: Research & Reports
+      subtitle: 'Theses, reports, and technical writeups'
       text: ''
       filters:
         folders:
@@ -109,19 +64,15 @@ sections:
     design:
       view: citation
       columns: 1
-      background:
-        color:
-          light: "#ffffff"
-          dark: "#0d0d12"
       spacing:
-        padding: ["4rem", "0", "4rem", "0"]
+        padding: ["3rem", "0", "3rem", "0"]
 
-  # Recent Blog Posts
+  # Blog
   - block: collection
     id: blog
     content:
-      title: Recent Posts
-      subtitle: 'Notes and writing'
+      title: Notes
+      subtitle: 'Short writeups from robotics, perception, and experiments'
       text: ''
       filters:
         folders:
@@ -132,29 +83,21 @@ sections:
     design:
       view: card
       columns: 3
-      background:
-        color:
-          light: "#f5f5f5"
-          dark: "#08080c"
       spacing:
-        padding: ["4rem", "0", "4rem", "0"]
+        padding: ["3rem", "0", "3rem", "0"]
 
-  # Contact Section
+  # Contact
   - block: contact-info
     id: contact
     content:
       title: Get In Touch
       subtitle: ""
       text: |-
-        Reach out by email if you'd like to get in touch.
+        Reach out if you want to talk about robotics, computer vision, sensor fusion, or graduation-project work.
       email: j.j.p.leliveld@student.tue.nl
       autolink: true
     design:
       columns: '1'
-      background:
-        color:
-          light: "#ffffff"
-          dark: "#0d0d12"
       spacing:
-        padding: ["4rem", "0", "6rem", "0"]
+        padding: ["3rem", "0", "4rem", "0"]
 ---

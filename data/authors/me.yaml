@@ -8,11 +8,12 @@ name:
 postnominals: []
 status:
   icon: "🎓"
-role: Student at TU Eindhoven
+role: MSc AI & Engineering Systems student
 email: j.j.p.leliveld@student.tue.nl
 bio: |
-  Short bio — replace this paragraph. Mention your program, your interests, and
-  what you're working on right now. Keep it to two or three sentences.
+  I am an MSc AI & Engineering Systems student at Eindhoven University of Technology, focused on the High Tech Systems and Robotics track.
+  My work sits at the intersection of robotics, computer vision, sensor fusion, and learning-based control, with a current graduation project on mobile robot navigation from external camera observations.
+  I enjoy building reproducible experimental pipelines that connect simulation, perception, planning, and real robot behavior.
 
 affiliations:
   - name: Eindhoven University of Technology
@@ -24,34 +25,78 @@ links:
     label: E-mail
   - icon: brands/github
     url: https://github.com/JoostLeliveld
-  # - icon: brands/linkedin
-  #   url: https://www.linkedin.com/in/<your-handle>/
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/joost-leliveld-142a16244/
   # - icon: academicons/orcid
   #   url: https://orcid.org/0000-0000-0000-0000
   # - icon: academicons/google-scholar
   #   url: https://scholar.google.com/citations?user=<id>
 
 interests:
-  - Replace with topic 1
-  - Replace with topic 2
-  - Replace with topic 3
+  - Robotics and Autonomous Systems
+  - Computer Vision and Sensor Fusion
+  - Learning-Based Control
+  - Sim-to-Real Robotics
+  - Robot Perception and State Estimation
 
 education:
-  - degree: Degree name (e.g. MSc Computer Science)
+  - degree: MSc AI and Engineering Systems
     institution: Eindhoven University of Technology
     start: 2024-09-01
-    # end: 2026-08-31
+    end: 2026-09-30
     summary: |
-      One or two lines about the program, focus area, or notable courses.
+      Project-based master's program in the High Tech Systems and Robotics track, combining AI, control, robotics, and embedded engineering systems.
+      Relevant coursework includes Computer Vision AI and 3D Data Analysis, Machine Learning for Systems and Control, Reinforcement Learning, Embedded Visual Control, Statistical Signal Processing, and Control Principles for Linear Systems.
 
-experience: []
+experience:
+  - role: Team Internship - Robotics and Reinforcement Learning
+    organization: Eindhoven University of Technology
+    start: 2025-04-01
+    end: 2025-06-16
+    summary: |
+      Worked on an end-to-end sim-to-real robotics project involving lidar-based navigation, reinforcement learning, Isaac Lab, Gazebo, and deployment on a mobile robot platform.
+      Focused on autonomous navigation, experimental evaluation, and bridging simulation-trained policies to real-world robotic systems.
+
+  - role: Graduation Project - External-Camera Robot Navigation
+    organization: Eindhoven University of Technology
+    start: 2025-09-01
+    end: 2026-09-30
+    summary: |
+      Research project on mobile robot navigation using external camera observations, geometric perception, and learning-based planning/control.
+      Combines computer vision, sensor fusion, robot dynamics, and autonomous decision-making for reliable navigation under externally observed sensing.
 
 skills:
-  - name: Programming
+  - name: Programming & Tools
     items:
       - label: Python
+        level: 5
+      - label: NumPy / SciPy
         level: 4
-      - label: Other
+      - label: Git
+        level: 4
+      - label: Linux
+        level: 4
+
+  - name: Robotics & Simulation
+    items:
+      - label: ROS 2
+        level: 4
+      - label: Gazebo
+        level: 4
+      - label: Isaac Lab
+        level: 3
+      - label: Mobile Robot Navigation
+        level: 4
+
+  - name: Perception & Learning
+    items:
+      - label: OpenCV
+        level: 4
+      - label: Homography and Projection Geometry
+        level: 4
+      - label: Reinforcement Learning
+        level: 3
+      - label: Sensor Fusion
         level: 3
 
 languages:
