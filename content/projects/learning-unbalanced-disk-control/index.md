@@ -30,6 +30,8 @@ This project is a learning-based control case study around an unbalanced disk: a
 
 The repository is not public, so this page is written as a results-focused portfolio summary. It is meant to show the engineering question, methods, and experiment structure without exposing private coursework or raw code.
 
+![Unbalanced disk learning-control summary](control-summary.svg)
+
 ## Engineering Question
 
 How well can learned models and learned controllers handle a nonlinear mechanical system when the state representation, normalization, and model class strongly influence stability and control performance?
@@ -42,7 +44,7 @@ How well can learned models and learned controllers handle a nonlinear mechanica
 - SAC, PPO, DQN, and a custom DDPG implementation.
 - State encoding, normalization, and quantitative comparisons across model/control choices.
 
-## What I Would Show Publicly
+## Result Evidence To Publish
 
 A polished public version should include:
 
@@ -51,6 +53,13 @@ A polished public version should include:
 - Reward curves for each controller.
 - Stability or tracking metrics across methods.
 - A short table explaining where each method failed or generalized.
+
+| Evidence type | What it should demonstrate |
+| --- | --- |
+| Rollout plot | Learned dynamics versus measured or simulated trajectories |
+| Reward curve | Convergence and stability differences across SAC, PPO, DQN, and DDPG |
+| Failure table | Which methods were sensitive to state encoding, scaling, or exploration |
+| Control metric | Tracking, stabilization, or energy-use comparison on held-out rollouts |
 
 ## My Contribution
 

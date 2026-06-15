@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Pathology image analysis feature pipeline</title>
+  <desc id="desc">An earlier computer vision pipeline for skin lesion segmentation and ABCD-style feature extraction.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7efe9"/>
+      <stop offset="0.55" stop-color="#eef6f4"/>
+      <stop offset="1" stop-color="#f3f0fa"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#42291f" flood-opacity="0.14"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7d5b4c"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <text x="70" y="74" fill="#34241f" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700">Pathology Image Analysis</text>
+  <text x="72" y="112" fill="#6c5f5a" font-family="Inter, Arial, sans-serif" font-size="20">Earlier OpenCV coursework around lesion segmentation and ABCD-style visual features.</text>
+  <g filter="url(#shadow)" font-family="Inter, Arial, sans-serif">
+    <rect x="92" y="174" width="240" height="320" rx="24" fill="#ffffff" stroke="#dec5bb"/>
+    <circle cx="212" cy="318" r="88" fill="#e9b69a"/>
+    <path d="M174 270 C224 218 296 272 270 344 C242 421 142 384 151 318 C154 294 159 283 174 270 Z" fill="#7d4d3d"/>
+    <path d="M182 285 C218 254 258 283 248 330 C232 378 171 356 172 318 C173 301 176 292 182 285 Z" fill="#57322b" opacity="0.75"/>
+    <text x="212" y="454" text-anchor="middle" fill="#34241f" font-size="19" font-weight="700">Image and mask</text>
+
+    <rect x="480" y="174" width="240" height="320" rx="24" fill="#ffffff" stroke="#b6d4cf"/>
+    <text x="600" y="220" text-anchor="middle" fill="#24504a" font-size="21" font-weight="700">Feature extraction</text>
+    <text x="600" y="278" text-anchor="middle" fill="#5c6d69" font-size="17">asymmetry</text>
+    <text x="600" y="324" text-anchor="middle" fill="#5c6d69" font-size="17">border contour</text>
+    <text x="600" y="370" text-anchor="middle" fill="#5c6d69" font-size="17">color regions</text>
+    <text x="600" y="416" text-anchor="middle" fill="#5c6d69" font-size="17">diameter estimate</text>
+
+    <rect x="868" y="174" width="240" height="320" rx="24" fill="#ffffff" stroke="#cfc4df"/>
+    <text x="988" y="220" text-anchor="middle" fill="#43335d" font-size="21" font-weight="700">Interpretation</text>
+    <rect x="918" y="268" width="140" height="20" rx="10" fill="#deb9aa"/>
+    <rect x="918" y="316" width="108" height="20" rx="10" fill="#8ab5aa"/>
+    <rect x="918" y="364" width="154" height="20" rx="10" fill="#b4a6ce"/>
+    <text x="988" y="442" text-anchor="middle" fill="#6c5f5a" font-size="17">hand-engineered scores</text>
+  </g>
+  <g fill="none" stroke="#7d5b4c" stroke-width="5" marker-end="url(#arrow)">
+    <path d="M340 334 H462"/>
+    <path d="M728 334 H850"/>
+  </g>
+</svg>

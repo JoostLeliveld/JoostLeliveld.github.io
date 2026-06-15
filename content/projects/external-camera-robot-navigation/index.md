@@ -40,9 +40,9 @@ This graduation project investigates mobile robot navigation using a fixed exter
 
 The core question is how camera geometry, visibility, and sensor reliability should influence autonomous navigation decisions before localization failure becomes a recovery problem.
 
-![External-camera warehouse setup](https://raw.githubusercontent.com/JoostLeliveld/UnembodiedNavigation/main/paper_artifacts/figures/problem_setup_camera.png)
+![External-camera warehouse setup](featured.png)
 
-![External-camera navigation architecture](https://raw.githubusercontent.com/JoostLeliveld/UnembodiedNavigation/main/docs/media/system_architecture.svg)
+![External-camera navigation architecture](system-architecture.svg)
 
 ## Why This Project
 
@@ -70,6 +70,14 @@ Gazebo warehouse
 - Fit a GP reliability model and used it to provide state-dependent camera covariance to the planner.
 - Compared constant-covariance planning with visibility-aware planning in a seeded warehouse route-choice benchmark.
 
+## Evidence Available Now
+
+The public repository is structured as a research artifact rather than only source code. The site now serves the paper-facing warehouse setup and architecture figure locally, and the project links directly to the source repository and public artifacts folder.
+
+- Code and documentation: ROS/Gazebo simulation, perception, state-estimation, planning, and experiment modules.
+- Figures and metrics: paper-facing figures plus seeded benchmark outputs under `paper_artifacts`.
+- Reproducibility trail: launch/configuration documentation and route-choice campaign structure.
+
 ## Public Result Snapshot
 
 The public repository reports a paper-facing benchmark with four warehouse tasks and five seeds per condition:
@@ -79,8 +87,13 @@ The public repository reports a paper-facing benchmark with four warehouse tasks
 | C1 | constant camera covariance | 12/20 | 8/20 | none |
 | C2 | visibility-aware covariance | 16/20 | 2/20 | 1 near-success, 1 infrastructure-invalid |
 
-## Public Repository Structure
+## Artifact Availability
 
-The repository is organized as a research artifact rather than just source code, with module pages for YOLO perception, GP covariance modeling, state estimation, EFE planning, experiments, figures, metrics, and reproduction commands.
+The public artifact folder contains the paper-facing figures and benchmark material that can already be shared. Large generated outputs, intermediate training assets, and final thesis packaging material remain staged until the final release.
 
-Current release gaps noted in the repository are the overview video, license, citation metadata, and artifact/data availability statement.
+## Release Checklist
+
+- Add a short overview video once the final demo cut is ready.
+- Choose and add the final repository license.
+- Add `CITATION.cff` or equivalent citation metadata after the thesis title/date are final.
+- Expand the artifact/data availability statement when final PDFs, videos, and any archived datasets are published.

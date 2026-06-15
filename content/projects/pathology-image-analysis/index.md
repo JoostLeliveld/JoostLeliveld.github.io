@@ -29,6 +29,8 @@ This is earlier computer-vision coursework around skin-lesion image analysis. Th
 
 I keep this separate from the main robotics case studies because it is older and less aligned with my current portfolio direction, but it still shows useful early experience with image processing and feature engineering.
 
+![Pathology image-analysis feature pipeline](feature-pipeline.svg)
+
 ## Approach
 
 The project followed the ABCD-style analysis idea:

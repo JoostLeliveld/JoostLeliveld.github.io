@@ -26,6 +26,8 @@ role: "Embedded AI project"
 
 This project is less central to the robotics story, but it is useful for AI-systems and embedded-computing roles. It focuses on implementing and verifying a CNN accelerator in SystemVerilog, with attention to data movement, reuse, simulation, and correctness.
 
+![SystemVerilog CNN accelerator datapath](datapath-diagram.svg)
+
 ## Engineering Focus
 
 The portfolio angle is not the course lab itself. The interesting engineering story is:
@@ -36,7 +38,7 @@ The portfolio angle is not the course lab itself. The interesting engineering st
 - Testbench design and result checking.
 - Trade-offs between hardware structure, throughput, and implementation complexity.
 
-## What I Would Show Publicly
+## Result Evidence To Publish
 
 A strong public writeup would include:
 
@@ -45,6 +47,13 @@ A strong public writeup would include:
 - Simulation waveform screenshots.
 - Verification table for representative layers or kernels.
 - Resource/timing notes if available.
+
+| Evidence type | What it should demonstrate |
+| --- | --- |
+| Datapath diagram | How input tiles, weights, MACs, accumulation, and output buffers connect |
+| Waveform screenshot | Valid/ready behavior and expected output timing in simulation |
+| Verification table | Representative kernels or layers checked against reference outputs |
+| Resource note | Hardware trade-offs around reuse, buffering, and throughput |
 
 ## Why It Belongs Here
 

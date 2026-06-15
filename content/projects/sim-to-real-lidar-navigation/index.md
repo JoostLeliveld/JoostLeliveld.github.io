@@ -35,9 +35,9 @@ role: "Team project"
 
 This team internship project demonstrates an end-to-end sim-to-real workflow for LiDAR-based mobile robot navigation using reinforcement learning. The public repository targets the Origin One platform and builds on Isaac Lab/Isaac Sim tooling for training, assets, environments, and reinforcement-learning workflows.
 
-![Project overview](https://raw.githubusercontent.com/kgulikers/Team_internship_5ARIP10/main/docs/media/Overview.png)
+![Project overview](featured.png)
 
-![Navigation environment](https://raw.githubusercontent.com/kgulikers/Team_internship_5ARIP10/main/docs/media/navigation_environment.png)
+![Navigation environment](navigation-environment.png)
 
 ## System
 
@@ -48,6 +48,19 @@ python source/avulab_rl/scripts/train_rl.py --headless -r RSS_NAV_CONFIG
 ```
 
 The repository uses Weights & Biases for training logs and videos, and documents an Isaac Lab setup with custom packages for assets, tasks, and RL code.
+
+![Observation and action design](observation-action.svg)
+
+## RL Interface
+
+The public-facing interface is a LiDAR navigation policy: range observations and goal-relative state feed a PPO policy, which outputs differential-drive velocity commands. The reward design is organized around progress to the goal, collision avoidance, control smoothness, and task completion.
+
+| Interface piece | Portfolio-level summary |
+| --- | --- |
+| Observation | LiDAR geometry plus goal-relative navigation state |
+| Action | Differential-drive command for the Origin One platform |
+| Policy | PPO policy trained in Isaac Lab/Isaac Sim workflows |
+| Transfer path | Policy export toward ROS 2, Gazebo, and real-world deployment tooling |
 
 ## My Contribution
 
@@ -72,9 +85,9 @@ The team repository citation names me as a co-author:
 }
 ```
 
-## What I Would Show in a Demo
+## Evidence Status
 
-The strongest public version of this page would include the Isaac Lab training video, Gazebo or real-robot deployment video, observation/action-space diagrams, reward design, training curves, and a final success-rate table. The page is structured for those artifacts once they are ready to publish.
+This page now includes the public workflow figure, Isaac Lab navigation environment, and observation/action design diagram. The remaining high-value artifacts are the Isaac Lab training video, Gazebo or real-robot deployment clip, training curve, and final success-rate table once those are ready to publish from the team material.
 
 ## Why It Matters
 
