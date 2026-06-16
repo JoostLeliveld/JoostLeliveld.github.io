@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="JL monogram">
+  <rect width="512" height="512" fill="none"/>
+  <circle cx="256" cy="256" r="238" fill="#002b36"/>
+  <circle cx="256" cy="256" r="222" fill="none" stroke="#268bd2" stroke-width="24"/>
+  <circle cx="256" cy="256" r="192" fill="none" stroke="#073642" stroke-width="6"/>
+  <text x="256" y="314"
+        text-anchor="middle"
+        fill="#eee8d5"
+        font-family="Lora, 'Source Serif 4', Georgia, serif"
+        font-size="196"
+        font-weight="700"
+        letter-spacing="0">JL</text>
+  <path d="M166 356h180" stroke="#859900" stroke-width="18" stroke-linecap="round"/>
+</svg>
