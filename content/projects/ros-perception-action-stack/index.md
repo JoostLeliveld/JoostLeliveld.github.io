@@ -20,13 +20,13 @@ tech_stack:
   - Motor Control
 links: []
 featured: true
-status: "Demo pending"
+status: "Project note"
 role: "Robotics software integration"
 ---
 
 ## Overview
 
-This project represents the practical robotics side of my portfolio: connecting perception to action in a working robot software stack. The goal is not just to train or evaluate a model offline, but to make camera observations drive robot behavior through ROS nodes, control logic, and feedback from the hardware.
+This project is about the practical part of robotics that sits between a camera feed and a moving robot. The goal was not to train or evaluate a model offline, but to make observations turn into behavior through ROS nodes, control logic, and hardware feedback.
 
 ![ROS perception-to-action architecture](stack-diagram.svg)
 
@@ -51,23 +51,21 @@ Camera
 - Encoder feedback for closing the loop between command and motion.
 - Natural-language or high-level robot-command experiments where appropriate.
 
-## Result-Oriented Summary
+## What The Stack Shows
 
-| Layer | Evidence this page can safely show |
+| Layer | What matters |
 | --- | --- |
 | Perception | Camera calibration, preprocessing, detection/tracking, and target-estimation interface |
 | Decision logic | Behavior/state-machine layer that turns estimates into robot-facing commands |
 | Control | Motor-command interface with encoder feedback for closing the loop |
-| Publication path | Clean launch file, message-interface documentation, and a short demo video |
+| System glue | Message boundaries, launch structure, and debugging across nodes |
 
-## My Contribution
+## What I Learned
 
-The value of this project is integration. It shows that I can connect sensors, software modules, control commands, and feedback into a robot-facing system rather than stopping at a notebook or standalone model.
+- Integration is its own engineering problem. A good perception module is not enough if timing, messages, and control interfaces are unclear.
+- Encoder feedback changes the feel of the system because commands become observable rather than just assumed.
+- ROS makes boundaries explicit, which is useful, but only if topics, frames, and node responsibilities stay simple.
 
-## Next Publishable Artifacts
+## Current State
 
-Before making this a public repository, I would consolidate the ROS nodes, add a launch file, include a short demo video, and document the main message interfaces. A strong public version should make it easy to understand how camera information becomes robot motion.
-
-## Source Availability
-
-The code is not currently published as a clean standalone repository. This page intentionally shows the architecture and contribution without exposing private or messy development history.
+The code is not currently published as a clean standalone repository. The useful next step is to separate the main ROS nodes from development clutter, add a launch file, document the message interfaces, and include a short demo clip.

@@ -18,19 +18,19 @@ tech_stack:
   - Verification
 links: []
 featured: true
-status: "Portfolio summary"
+status: "Project note"
 role: "Embedded AI project"
 ---
 
 ## Overview
 
-This project is less central to the robotics story, but it is useful for AI-systems and embedded-computing roles. It focuses on implementing and verifying a CNN accelerator in SystemVerilog, with attention to data movement, reuse, simulation, and correctness.
+This project sits on the hardware side of AI systems. It focuses on implementing and verifying a CNN accelerator in SystemVerilog, with attention to data movement, reuse, simulation, and correctness.
 
 ![SystemVerilog CNN accelerator datapath](datapath-diagram.svg)
 
-## Engineering Focus
+## What I Focused On
 
-The portfolio angle is not the course lab itself. The interesting engineering story is:
+The interesting part was not just writing RTL, but understanding how neural-network computation changes when memory movement and datapath structure matter:
 
 - Weight-reuse dataflow for convolutional computation.
 - Memory and compute organization for neural-network layers.
@@ -38,27 +38,21 @@ The portfolio angle is not the course lab itself. The interesting engineering st
 - Testbench design and result checking.
 - Trade-offs between hardware structure, throughput, and implementation complexity.
 
-## Result Evidence To Publish
+## What To Inspect
 
-A strong public writeup would include:
-
-- Block diagram of the accelerator datapath.
-- Explanation of the weight-reuse strategy.
-- Simulation waveform screenshots.
-- Verification table for representative layers or kernels.
-- Resource/timing notes if available.
-
-| Evidence type | What it should demonstrate |
+| Evidence type | What it demonstrates |
 | --- | --- |
 | Datapath diagram | How input tiles, weights, MACs, accumulation, and output buffers connect |
 | Waveform screenshot | Valid/ready behavior and expected output timing in simulation |
 | Verification table | Representative kernels or layers checked against reference outputs |
 | Resource note | Hardware trade-offs around reuse, buffering, and throughput |
 
-## Why It Belongs Here
+## What I Learned
 
-Most of my portfolio focuses on robotics software, perception, and learning. This project broadens that story toward embedded AI and semiconductor-facing engineering: how learned models can be mapped toward hardware execution rather than only trained or simulated in Python.
+- A CNN layer is not just math once it reaches hardware; buffering, reuse, and timing are the hard parts.
+- Verification needs to be designed with the datapath, not added after it.
+- Working in SystemVerilog made the cost of every data movement much more concrete than in Python.
 
-## Source Availability
+## Notes
 
-The source is not currently published. This page is designed as a high-level case study for roles where AI systems, embedded compute, or hardware/software boundaries matter.
+The source is not currently published. The diagram captures the structure and learning points without exposing the original coursework repository.

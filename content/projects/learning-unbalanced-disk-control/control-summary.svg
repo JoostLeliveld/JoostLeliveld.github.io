@@ -63,6 +63,6 @@
 
   <g font-family="Inter, Arial, sans-serif">
     <rect x="136" y="590" width="928" height="44" rx="22" fill="#223329" opacity="0.92"/>
-    <text x="600" y="619" text-anchor="middle" fill="#f7f1df" font-size="18">Portfolio focus: compare model-based and model-free learning choices without exposing private coursework code.</text>
+    <text x="600" y="619" text-anchor="middle" fill="#f7f1df" font-size="18">Learning focus: compare model-based and model-free control choices on the same nonlinear system.</text>
   </g>
 </svg>

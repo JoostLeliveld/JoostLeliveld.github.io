@@ -2,7 +2,7 @@
 title: "Learning Nonlinear Dynamics and Control for an Unbalanced Disk"
 date: 2026-06-13
 weight: 30
-summary: "Results-focused ML/control case study on nonlinear system identification, Gaussian Processes, and actor-critic control."
+summary: "Nonlinear dynamics and control project using Gaussian Processes and actor-critic reinforcement learning."
 tags:
   - control
   - machine-learning
@@ -26,9 +26,9 @@ role: "Learning-based control project"
 
 ## Overview
 
-This project is a learning-based control case study around an unbalanced disk: a nonlinear dynamical system where the controller must reason about unstable behavior, state representation, model uncertainty, and the trade-off between learned dynamics and learned policies.
+This project explored learning-based control for an unbalanced disk: a nonlinear dynamical system where the controller must reason about unstable behavior, state representation, model uncertainty, and the trade-off between learned dynamics and learned policies.
 
-The repository is not public, so this page is written as a results-focused portfolio summary. It is meant to show the engineering question, methods, and experiment structure without exposing private coursework or raw code.
+The repository is not public, so this page shows the system, methods, and lessons without exposing coursework code.
 
 ![Unbalanced disk learning-control summary](control-summary.svg)
 
@@ -44,27 +44,21 @@ How well can learned models and learned controllers handle a nonlinear mechanica
 - SAC, PPO, DQN, and a custom DDPG implementation.
 - State encoding, normalization, and quantitative comparisons across model/control choices.
 
-## Result Evidence To Publish
+## What I Looked For
 
-A polished public version should include:
-
-- A schematic or short video of the unbalanced disk setup.
-- Rollout plots comparing learned dynamics against measured dynamics.
-- Reward curves for each controller.
-- Stability or tracking metrics across methods.
-- A short table explaining where each method failed or generalized.
-
-| Evidence type | What it should demonstrate |
+| Evidence type | What it demonstrates |
 | --- | --- |
 | Rollout plot | Learned dynamics versus measured or simulated trajectories |
 | Reward curve | Convergence and stability differences across SAC, PPO, DQN, and DDPG |
 | Failure table | Which methods were sensitive to state encoding, scaling, or exploration |
 | Control metric | Tracking, stabilization, or energy-use comparison on held-out rollouts |
 
-## My Contribution
+## What I Learned
 
-The strongest portfolio angle is breadth: this project shows nonlinear control and model learning, not another mobile robot navigation stack. It demonstrates that I can compare model-based and model-free learning approaches, reason about state encodings, and turn algorithmic differences into measurable control behavior.
+- Model quality and controller quality are coupled; a clean rollout fit does not automatically mean stable control.
+- State representation and normalization can dominate the result as much as the learning algorithm.
+- Comparing several controllers is useful because each failure mode teaches something different about the system.
 
-## Source Availability
+## Notes
 
-Source code is private for now. A cleaned repository would be useful once the experiment scripts, report figures, and reproducible results are separated from coursework scaffolding.
+Source code is private for now. A cleaned repository becomes useful once the experiment scripts, report figures, and reproducible results are separated from coursework scaffolding.

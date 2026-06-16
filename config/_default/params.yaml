@@ -31,8 +31,8 @@ hugoblox:
   # Color and visual design system
   # ────────────────────────────────────────────────────────────────────────────
   theme:
-    # Mode: 'light', 'dark', or 'system' (follows OS preference)
-    mode: system
+    # Default mode: 'light', 'dark', or 'system' (follows OS preference)
+    mode: dark
     # Theme pack: name from data/themes/ or { light: "x", dark: "y" } for mix-and-match
     # Available packs: default, coffee, contrast, cupcake, dracula, marine,
     # matcha, minimal, retro, solar, synthwave. Picked 'solar' for warm
@@ -168,7 +168,7 @@ hugoblox:
     # Reading time estimates
     reading_time:
       enable: true
-    # Academic citations (disabled for developer portfolio)
+    # Academic citations
     citations:
       style: apa                        # apa | mla | chicago | ieee
 

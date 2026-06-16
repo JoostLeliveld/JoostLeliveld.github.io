@@ -2,7 +2,7 @@
 title: "Sim-to-Real LiDAR Navigation for the Origin One Robot"
 date: 2026-06-14
 weight: 20
-summary: "Team internship case study: Isaac Lab reinforcement learning for LiDAR-based Origin One navigation with sim-to-real deployment goals."
+summary: "Team internship project using Isaac Lab reinforcement learning for LiDAR-based Origin One navigation."
 tags:
   - robotics
   - reinforcement-learning
@@ -27,7 +27,7 @@ links:
     label: Related Origin Integration
     icon: link
 featured: true
-status: "Completed internship"
+status: "Team project"
 role: "Team project"
 ---
 
@@ -55,22 +55,28 @@ The repository uses Weights & Biases for training logs and videos, and documents
 
 The public-facing interface is a LiDAR navigation policy: range observations and goal-relative state feed a PPO policy, which outputs differential-drive velocity commands. The reward design is organized around progress to the goal, collision avoidance, control smoothness, and task completion.
 
-| Interface piece | Portfolio-level summary |
+| Interface piece | Project summary |
 | --- | --- |
 | Observation | LiDAR geometry plus goal-relative navigation state |
 | Action | Differential-drive command for the Origin One platform |
 | Policy | PPO policy trained in Isaac Lab/Isaac Sim workflows |
 | Transfer path | Policy export toward ROS 2, Gazebo, and real-world deployment tooling |
 
-## My Contribution
+## What I Worked On
 
-My attributed work belongs in the core engineering layer, not only documentation. The portfolio-relevant contribution areas are:
+My work sat in the engineering layer of the project:
 
 - Observation and action design for LiDAR-based navigation.
 - Differential-drive control and Origin One platform integration.
 - Curriculum and reinforcement-learning configuration work.
 - Training infrastructure for the navigation task.
-- Integration work that connects the project to the Origin-oriented WheeledLab foundation.
+- Integration work connecting the project to the Origin-oriented WheeledLab foundation.
+
+## What I Learned
+
+- Sim-to-real work is mostly interface discipline: observations, actions, coordinate frames, and control assumptions all have to survive the jump between tools.
+- A policy is only one part of the system. Training setup, export path, ROS/Gazebo integration, and robot constraints shape whether it is actually usable.
+- Reward design is less about finding one clever term and more about making progress, safety, and smoothness pull in compatible directions.
 
 ## Public Evidence
 
@@ -85,10 +91,10 @@ The team repository citation names me as a co-author:
 }
 ```
 
-## Evidence Status
+## Current Artifacts
 
-This page now includes the public workflow figure, Isaac Lab navigation environment, and observation/action design diagram. The remaining high-value artifacts are the Isaac Lab training video, Gazebo or real-robot deployment clip, training curve, and final success-rate table once those are ready to publish from the team material.
+This page includes the public workflow figure, Isaac Lab navigation environment, and observation/action design diagram. Training videos, deployment clips, training curves, and final success-rate tables can be added later if the team material is cleared for sharing.
 
-## Why It Matters
+## Relation To My Other Work
 
 This project complements my thesis work: the thesis emphasizes external-camera perception and uncertainty-aware planning, while this project emphasizes onboard LiDAR, reinforcement learning, and sim-to-real deployment on a physical mobile robot platform.

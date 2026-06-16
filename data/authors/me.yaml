@@ -11,9 +11,9 @@ status:
 role: MSc AI & Engineering Systems student
 email: j.j.p.leliveld@student.tue.nl
 bio: |
-  I am an MSc AI & Engineering Systems student at Eindhoven University of Technology, focused on the High Tech Systems and Robotics track.
-  My work sits at the intersection of robotics, computer vision, sensor fusion, and learning-based control, with a current graduation project on mobile robot navigation from external camera observations.
-  I enjoy building reproducible experimental pipelines that connect simulation, perception, planning, and real robot behavior.
+  I work on robotics systems that connect perception, simulation, planning, and control.
+  I am currently doing an MSc graduation project at Eindhoven University of Technology on mobile robot navigation from external camera observations.
+  I like projects where the interesting part is the whole loop: sensing, uncertainty, decisions, and what finally happens in the robot or simulator.
 
 affiliations:
   - name: Eindhoven University of Technology

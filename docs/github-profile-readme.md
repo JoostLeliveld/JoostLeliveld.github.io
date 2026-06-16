@@ -10,7 +10,7 @@ I am working on an MSc graduation project about mobile robot navigation from ext
 
 ## Selected Projects
 
-- [Visibility-Aware Navigation from External Cameras](https://joostleliveld.github.io/projects/external-camera-robot-navigation/) - thesis flagship on external-camera robot navigation and state-dependent perception uncertainty.
+- [Visibility-Aware Navigation from External Cameras](https://joostleliveld.github.io/projects/external-camera-robot-navigation/) - thesis project on external-camera robot navigation and state-dependent perception uncertainty.
 - [Sim-to-Real LiDAR Navigation for the Origin One Robot](https://joostleliveld.github.io/projects/sim-to-real-lidar-navigation/) - team internship project using Isaac Lab, PPO, LiDAR navigation, and Origin One deployment tooling.
 - [ROS Perception-to-Action Robot Stack](https://joostleliveld.github.io/projects/ros-perception-action-stack/) - practical robot integration work connecting camera perception, behavior logic, motor control, and encoder feedback.
 

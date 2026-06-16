@@ -27,7 +27,7 @@ role: "Team coursework"
 
 This is earlier computer-vision coursework around skin-lesion image analysis. The project explored whether an algorithm could assess melanoma-related visual features from an image using color, asymmetry, diameter, and border characteristics.
 
-I keep this separate from the main robotics case studies because it is older and less aligned with my current portfolio direction, but it still shows useful early experience with image processing and feature engineering.
+I keep this separate from the main robotics projects because it is older, but it is a useful snapshot of early image-processing work: segmentation, hand-built features, and the gap between a visual heuristic and a reliable measurement.
 
 ![Pathology image-analysis feature pipeline](feature-pipeline.svg)
 
@@ -40,10 +40,14 @@ The project followed the ABCD-style analysis idea:
 - Color-region scoring from thresholded masks.
 - Diameter-related measurements from segmented lesion geometry.
 
-## Why It Is Earlier Work
+## What I Learned
 
-There are multiple related repositories from this period, so this page links only the clearest team-owned version rather than turning each repository into a separate portfolio card.
+- Hand-engineered features can be intuitive, but they are sensitive to segmentation quality and dataset assumptions.
+- Medical-looking image tasks need much more care around evaluation, data provenance, and claims than ordinary visual demos.
+- The same OpenCV basics, such as masks, contours, and color spaces, show up again later in robotics perception.
 
-## What I Would Improve Today
+## Notes
 
-If revisiting this project, I would consolidate the duplicated repositories, document the dataset and evaluation protocol more clearly, and separate exploratory scripts from a clean reproducible pipeline.
+There are multiple related repositories from this period, so this page links only the clearest team-owned version rather than splitting old coursework across several project pages.
+
+A useful cleanup is to consolidate the duplicated repositories, document the dataset and evaluation protocol more clearly, and separate exploratory scripts from a clean reproducible pipeline.

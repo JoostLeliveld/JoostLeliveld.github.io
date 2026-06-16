@@ -1,5 +1,5 @@
 ---
-title: 'Engineering Case Studies'
+title: 'Projects and Experiments'
 date: 2024-05-19
 type: landing
 
@@ -7,8 +7,8 @@ type: landing
 sections:
   - block: collection
     content:
-      title: Selected Engineering Work
-      text: Case studies around mobile robot navigation, external perception, simulation, sensor fusion, learning-based control, embedded AI, and earlier computer-vision work.
+      title: Selected Projects
+      text: Robotics, perception, control, embedded AI, and earlier computer-vision work.
       filters:
         folders:
           - projects

@@ -17,7 +17,7 @@ sections:
       typewriter:
         enable: false
       cta_buttons:
-        - text: Robotics Work
+        - text: Projects
           url: "#projects"
           icon: arrow-down
         - text: Contact
@@ -34,8 +34,8 @@ sections:
   - block: portfolio
     id: projects
     content:
-      title: "Engineering Case Studies"
-      subtitle: "Perception, uncertainty, learning, control, and deployment on robotic systems"
+      title: "Projects and Experiments"
+      subtitle: "Robotics, perception, control, and systems work I have built and learned from"
       count: 0
       filters:
         folders:
@@ -63,8 +63,8 @@ sections:
   - block: collection
     id: publications
     content:
-      title: Research & Reports
-      subtitle: 'Theses, reports, and technical writeups'
+      title: Reports and Writeups
+      subtitle: 'Thesis material, reports, and technical notes'
       text: ''
       filters:
         folders:
