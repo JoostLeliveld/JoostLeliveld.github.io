@@ -32,6 +32,7 @@ links:
 featured: true
 status: "In progress"
 role: "Graduation Project"
+gallery: []
 ---
 
 ## Overview
@@ -43,6 +44,8 @@ The core question is how camera geometry, visibility, and sensor reliability sho
 ![External-camera warehouse setup](featured.png)
 
 ![External-camera navigation architecture](system-architecture.svg)
+
+{{< project-gallery >}}
 
 ## Why This Project
 

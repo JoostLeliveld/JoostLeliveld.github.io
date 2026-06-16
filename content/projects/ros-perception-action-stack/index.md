@@ -22,6 +22,7 @@ links: []
 featured: true
 status: "Project note"
 role: "Robotics software integration"
+gallery: []
 ---
 
 ## Overview
@@ -29,6 +30,8 @@ role: "Robotics software integration"
 This project is about the practical part of robotics that sits between a camera feed and a moving robot. The goal was not to train or evaluate a model offline, but to make observations turn into behavior through ROS nodes, control logic, and hardware feedback.
 
 ![ROS perception-to-action architecture](stack-diagram.svg)
+
+{{< project-gallery >}}
 
 ## System Shape
 

@@ -20,6 +20,7 @@ links: []
 featured: true
 status: "Project note"
 role: "Embedded AI project"
+gallery: []
 ---
 
 ## Overview
@@ -27,6 +28,8 @@ role: "Embedded AI project"
 This project sits on the hardware side of AI systems. It focuses on implementing and verifying a CNN accelerator in SystemVerilog, with attention to data movement, reuse, simulation, and correctness.
 
 ![SystemVerilog CNN accelerator datapath](datapath-diagram.svg)
+
+{{< project-gallery >}}
 
 ## What I Focused On
 

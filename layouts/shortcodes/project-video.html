@@ -1,0 +1,24 @@
+{{- $src := .Get "src" -}}
+{{- if $src -}}
+{{- $resource := .Page.Resources.GetMatch $src -}}
+{{- $url := $src -}}
+{{- if $resource }}{{ $url = $resource.RelPermalink }}{{ end -}}
+{{- $posterURL := "" -}}
+{{- with .Get "poster" }}
+  {{- $posterRes := $.Page.Resources.GetMatch . -}}
+  {{- if and $posterRes (eq $posterRes.MediaType.MainType "image") -}}
+    {{- $poster := $posterRes.Fit "1400x788 webp q85" -}}
+    {{- $posterURL = $poster.RelPermalink -}}
+  {{- else -}}
+    {{- $posterURL = . -}}
+  {{- end -}}
+{{- end -}}
+<figure class="not-prose my-10 overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm dark:border-white/10 dark:bg-white/[0.03]">
+  <video class="aspect-video w-full bg-black object-contain" controls playsinline preload="metadata"{{ with $posterURL }} poster="{{ . }}"{{ end }}>
+    <source src="{{ $url }}"{{ with .Get "mime" }} type="{{ . }}"{{ end }}>
+  </video>
+  {{- with .Get "caption" }}
+  <figcaption class="border-t border-gray-100 px-4 py-3 text-sm leading-relaxed text-gray-600 dark:border-white/10 dark:text-gray-300">{{ . }}</figcaption>
+  {{- end }}
+</figure>
+{{- end -}}

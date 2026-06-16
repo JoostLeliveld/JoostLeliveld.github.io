@@ -22,6 +22,7 @@ links: []
 featured: true
 status: "Private code"
 role: "Learning-based control project"
+gallery: []
 ---
 
 ## Overview
@@ -31,6 +32,8 @@ This project explored learning-based control for an unbalanced disk: a nonlinear
 The repository is not public, so this page shows the system, methods, and lessons without exposing coursework code.
 
 ![Unbalanced disk learning-control summary](control-summary.svg)
+
+{{< project-gallery >}}
 
 ## Engineering Question
 

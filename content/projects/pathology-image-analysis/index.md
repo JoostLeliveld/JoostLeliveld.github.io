@@ -21,6 +21,7 @@ links:
 featured: false
 status: "Earlier work"
 role: "Team coursework"
+gallery: []
 ---
 
 ## Overview
@@ -30,6 +31,8 @@ This is earlier computer-vision coursework around skin-lesion image analysis. Th
 I keep this separate from the main robotics projects because it is older, but it is a useful snapshot of early image-processing work: segmentation, hand-built features, and the gap between a visual heuristic and a reliable measurement.
 
 ![Pathology image-analysis feature pipeline](feature-pipeline.svg)
+
+{{< project-gallery >}}
 
 ## Approach
 

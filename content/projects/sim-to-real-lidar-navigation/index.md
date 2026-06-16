@@ -29,6 +29,7 @@ links:
 featured: true
 status: "Team project"
 role: "Team project"
+gallery: []
 ---
 
 ## Overview
@@ -38,6 +39,8 @@ This team internship project demonstrates an end-to-end sim-to-real workflow for
 ![Project overview](featured.png)
 
 ![Navigation environment](navigation-environment.png)
+
+{{< project-gallery >}}
 
 ## System
 
