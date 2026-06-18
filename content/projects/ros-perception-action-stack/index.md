@@ -1,8 +1,8 @@
 ---
-title: "ROS Perception-to-Action Robot Stack"
+title: "ROS Perception-to-Action Jetson RC Car"
 date: 2026-06-12
 weight: 40
-summary: "Practical robotics integration project connecting camera perception, target estimation, behavior logic, motor control, and encoder feedback."
+summary: "Jetson RC car stack connecting vision, target tracking, obstacle avoidance, and robot motion."
 tags:
   - robotics
   - computer-vision
@@ -18,57 +18,46 @@ tech_stack:
   - Camera Calibration
   - Encoder Feedback
   - Motor Control
-links: []
+links:
+  - type: custom
+    url: report.pdf
+    label: Embedded Visual Control report
+    icon: document-text
 featured: true
 status: "Project note"
 role: "Robotics software integration"
-gallery: []
+gallery:
+  - type: video
+    src: media/jetson-rc-car-demo.mp4
+    poster: featured.jpg
+    mime: video/mp4
+    caption: Jetson-based RC car used for the person identification, tracking, and following stack.
+  - type: image
+    src: media/ros-architecture.png
+    alt: Implemented ROS architecture for person identification, tracking, and following
+    caption: ROS architecture with vision, identification, tracking, obstacle avoidance, state management, and motion control.
 ---
 
 ## Overview
 
-This project is about the practical part of robotics that sits between a camera feed and a moving robot. The goal was not to train or evaluate a model offline, but to make observations turn into behavior through ROS nodes, control logic, and hardware feedback.
-
-![ROS perception-to-action architecture](stack-diagram.svg)
+Embedded Visual Control project on a Jetson-based RC car. The stack turns camera observations into behavior by combining person detection, identification, tracking, obstacle avoidance, state management, and motor control.
 
 {{< project-gallery >}}
 
-## System Shape
-
-```text
-Camera
--> calibration and image preprocessing
--> detection or gesture recognition
--> target estimate
--> behavior logic
--> motor command
--> encoder feedback
-```
-
-## Components
-
-- Camera calibration and image-processing pipeline.
-- Detection, tracking, or gesture-recognition logic.
-- Target-estimation interface for downstream behavior.
-- ROS nodes for perception, decision logic, and actuation.
-- Encoder feedback for closing the loop between command and motion.
-- Natural-language or high-level robot-command experiments where appropriate.
-
-## What The Stack Shows
+## What It Shows
 
 | Layer | What matters |
 | --- | --- |
-| Perception | Camera calibration, preprocessing, detection/tracking, and target-estimation interface |
-| Decision logic | Behavior/state-machine layer that turns estimates into robot-facing commands |
-| Control | Motor-command interface with encoder feedback for closing the loop |
-| System glue | Message boundaries, launch structure, and debugging across nodes |
+| Perception | Camera stream, person detection, and identification |
+| Behavior | Search, track, follow, and avoid-obstacle states |
+| Control | Motion commands connected to feedback and safety logic |
+| ROS glue | Topics and node boundaries that make the system debuggable |
 
 ## What I Learned
 
-- Integration is its own engineering problem. A good perception module is not enough if timing, messages, and control interfaces are unclear.
-- Encoder feedback changes the feel of the system because commands become observable rather than just assumed.
-- ROS makes boundaries explicit, which is useful, but only if topics, frames, and node responsibilities stay simple.
+- Integration is its own engineering problem; a good detector is not enough.
+- ROS boundaries help only when topics, frames, and node responsibilities stay simple.
 
-## Current State
+## Report
 
-The code is not currently published as a clean standalone repository. The useful next step is to separate the main ROS nodes from development clutter, add a launch file, document the message interfaces, and include a short demo clip.
+The report is available as a local PDF: [Person Identification, Tracking and Following](report.pdf).

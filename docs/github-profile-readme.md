@@ -16,7 +16,7 @@ I am working on an MSc graduation project about mobile robot navigation from ext
 
 ## Core Tools
 
-Python, ROS 2, Gazebo, Isaac Lab, OpenCV, YOLO, NumPy, SciPy, Gaussian Processes, reinforcement learning, Linux, Git, and SystemVerilog.
+Python, ROS 2, Gazebo, Isaac Lab, OpenCV, YOLO, NumPy, SciPy, Gaussian Processes, reinforcement learning, signal processing, Linux, and Git.
 
 ## Contact
 

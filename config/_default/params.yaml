@@ -187,7 +187,8 @@ hugoblox:
       - learning-based control
       - Isaac Lab
       - reinforcement learning
-      - SystemVerilog
+      - 3D data processing
+      - wearable sensing
     # Quick action shortcuts in search modal
     quick_actions: []
 

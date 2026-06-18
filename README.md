@@ -4,7 +4,7 @@ Source code for my personal website at:
 
 https://joostleliveld.github.io/
 
-The site is built with Hugo Blox and hosted with GitHub Pages. It is structured around project writeups in robotics, computer vision, sensor fusion, learning-based control, sim-to-real reinforcement learning, and embedded AI systems.
+The site is built with Hugo Blox and hosted with GitHub Pages. It is structured around project writeups in robotics, computer vision, sensor fusion, learning-based control, sim-to-real reinforcement learning, and data-driven sensing.
 
 ## Main Content
 

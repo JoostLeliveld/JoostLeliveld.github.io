@@ -6,12 +6,15 @@ main:
   - name: Projects
     url: /#projects
     weight: 10
+  - name: Experience
+    url: /#experience
+    weight: 20
   - name: Research
     url: /#publications
-    weight: 20
-  - name: Notes
-    url: /#blog
     weight: 30
+  - name: Notes
+    url: /blog/
+    weight: 40
   - name: Contact
     url: /#contact
-    weight: 40
+    weight: 50

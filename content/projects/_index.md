@@ -8,7 +8,7 @@ sections:
   - block: collection
     content:
       title: Selected Projects
-      text: Robotics, perception, control, embedded AI, and earlier computer-vision work.
+      text: Robotics, perception, control, computer vision, data-driven sensing, and earlier work.
       filters:
         folders:
           - projects

@@ -20,6 +20,9 @@ sections:
         - text: Projects
           url: "#projects"
           icon: arrow-down
+        - text: Experience
+          url: "#experience"
+          icon: briefcase
         - text: Contact
           url: "#contact"
           icon: envelope
@@ -35,7 +38,7 @@ sections:
     id: projects
     content:
       title: "Projects and Experiments"
-      subtitle: "Robotics, perception, control, and systems work I have built and learned from"
+      subtitle: "Robotics, perception, control, and data-driven systems work I have built and learned from"
       count: 0
       filters:
         folders:
@@ -59,6 +62,17 @@ sections:
       spacing:
         padding: ["3rem", "0", "3rem", "0"]
 
+  # Experience
+  - block: job-experience
+    id: experience
+    content:
+      username: me
+      title: "Experience"
+      subtitle: "Selected engineering work behind the robotics, data, and learning systems projects."
+    design:
+      spacing:
+        padding: ["2rem", "0", "3rem", "0"]
+
   # Publications and reports
   - block: collection
     id: publications
@@ -77,24 +91,6 @@ sections:
       spacing:
         padding: ["3rem", "0", "3rem", "0"]
 
-  # Blog
-  - block: collection
-    id: blog
-    content:
-      title: Notes
-      subtitle: 'Short writeups from robotics, perception, and experiments'
-      text: ''
-      filters:
-        folders:
-          - blog
-        exclude_featured: false
-      count: 3
-      order: desc
-    design:
-      view: card
-      columns: 3
-      spacing:
-        padding: ["3rem", "0", "3rem", "0"]
 
   # Contact
   - block: contact-info
@@ -103,7 +99,7 @@ sections:
       title: Get In Touch
       subtitle: ""
       text: |-
-        Reach out if you want to talk about robotics, computer vision, sensor fusion, or graduation-project work.
+        Reach out if you want to talk about anything you found interesting on this page.
       email: j.j.p.leliveld@student.tue.nl
       autolink: true
     design:

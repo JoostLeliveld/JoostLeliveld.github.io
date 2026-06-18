@@ -26,22 +26,15 @@ links:
   - type: code
     url: https://github.com/JoostLeliveld/UnembodiedNavigation
     label: Code
-  - type: dataset
-    url: https://github.com/JoostLeliveld/UnembodiedNavigation/tree/main/paper_artifacts
-    label: Artifacts
   - type: custom
     url: /projects/external-camera-robot-navigation/
     label: Project page
 ---
 
-This entry tracks my in-progress MSc graduation project. I will add the final PDF, code, and any additional material here once they are ready to share.
+This entry tracks my in-progress MSc graduation project. I will update it once the final thesis material is ready to share.
 
 ## Focus
 
 - External-camera robot localization using projective geometry and planar homography.
 - Navigation behavior under changing visibility and sensor reliability.
 - Simulation-based evaluation with a path toward real-world robotic constraints.
-
-## Public Artifacts
-
-The code repository and paper-facing artifact folder are linked above. The final thesis PDF, overview video, citation metadata, and complete data-availability statement will be added after final release packaging.

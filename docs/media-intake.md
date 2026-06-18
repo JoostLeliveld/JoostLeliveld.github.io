@@ -11,8 +11,8 @@ content/projects/external-camera-robot-navigation/media/
 content/projects/sim-to-real-lidar-navigation/media/
 content/projects/learning-unbalanced-disk-control/media/
 content/projects/ros-perception-action-stack/media/
-content/projects/systemverilog-cnn-accelerator/media/
-content/projects/pathology-image-analysis/media/
+content/projects/computer-vision-ai-3d-data-processing/media/
+content/projects/physical-activity-detection/media/
 content/outside/tennis-skiing/media/
 ```
 
@@ -86,6 +86,6 @@ Highest impact:
 - Origin One: Isaac Lab training video, Gazebo or real-robot clip, training curve, reward summary, final success table.
 - ROS stack: short demo clip, robot photo, calibration view, node/topic diagram.
 - Unbalanced disk: rollout plot, reward curves, comparison table, phase portrait or setup photo.
-- SystemVerilog: waveform screenshot, datapath export, verification table, timing/resource notes.
-- Pathology: example segmentation masks and feature outputs, only if dataset rights are clear.
+- Computer Vision AI and 3D Data Processing: screenshots or plots from the point-cloud, neural-network, and anomaly-detection reports.
+- Physical Activity Detection: one or two de-identified signal-processing plots if they are cleared for public sharing.
 - Outside: 4-8 strong tennis/skiing photos with short captions, kept as a light personal page rather than the main story.

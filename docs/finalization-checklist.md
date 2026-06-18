@@ -41,7 +41,7 @@ This should be a light human signal, not a second homepage.
 
 ## Still Missing From The Site
 
-- Real project videos.
+- More project videos beyond the MLSC demo clip.
 - More measured result plots and tables.
 - Final thesis license/citation/artifact statement.
 - Cleaner public summaries for private coursework projects.

@@ -46,24 +46,49 @@ education:
     end: 2026-09-30
     summary: |
       Project-based master's program in the High Tech Systems and Robotics track, combining AI, control, robotics, and embedded engineering systems.
-      Relevant coursework includes Computer Vision AI and 3D Data Analysis, Machine Learning for Systems and Control, Reinforcement Learning, Embedded Visual Control, Statistical Signal Processing, and Control Principles for Linear Systems.
+      Relevant coursework includes Computer Vision AI and 3D Data Processing, Machine Learning for Systems and Control, Reinforcement Learning, Embedded Visual Control, Statistical Signal Processing, and Control Principles for Linear Systems.
 
 experience:
-  - role: Team Internship - Robotics and Reinforcement Learning
+  - role: MSc Thesis Researcher - Autonomous Robotics and Safe Learning
     organization: Eindhoven University of Technology
-    start: 2025-04-01
-    end: 2025-06-16
+    logo: "/uploads/experience/tue.png"
+    start: 2026-02-01
     summary: |
-      Worked on an end-to-end sim-to-real robotics project involving lidar-based navigation, reinforcement learning, Isaac Lab, Gazebo, and deployment on a mobile robot platform.
-      Focused on autonomous navigation, experimental evaluation, and bridging simulation-trained policies to real-world robotic systems.
+      Designing autonomous navigation for a mobile robot using external-camera observations, lidar-based obstacle avoidance, and uncertainty-aware planning.
+      The work connects camera-frame mapping, ROS 2, Gazebo, PyTorch, and safe learning ideas into a robot-facing research stack.
+    tags:
+      - ROS 2
+      - Gazebo
+      - Computer Vision
+      - Safe Learning
 
-  - role: Graduation Project - External-Camera Robot Navigation
-    organization: Eindhoven University of Technology
-    start: 2025-09-01
-    end: 2026-09-30
+  - role: AI Intern - Reinforcement Learning in Robotics
+    organization: Avular
+    logo: "/uploads/experience/avular-logo.webp"
+    start: 2025-02-01
+    end: 2025-06-30
     summary: |
-      Research project on mobile robot navigation using external camera observations, geometric perception, and learning-based planning/control.
-      Combines computer vision, sensor fusion, robot dynamics, and autonomous decision-making for reliable navigation under externally observed sensing.
+      Worked in a four-person team on obstacle-avoidance policies for the Origin One robot, using NVIDIA Isaac Lab, PyTorch, AWS EC2 GPU instances, and experiment tracking.
+      The internship focused on the practical gap between simulation-trained reinforcement learning policies and mobile-robot behavior.
+    tags:
+      - Reinforcement Learning
+      - Isaac Lab
+      - PyTorch
+      - AWS
+
+  - role: Data Engineer / Data Analyst
+    organization: KORSIT
+    logo: "/uploads/experience/korsit.jpeg"
+    start: 2023-11-01
+    end: 2024-06-30
+    summary: |
+      Worked in data engineering and analytics, including a full-time period focused on migration work toward AWS Databricks and pipelines from raw data to Power BI dashboards.
+      Also helped improve stock-flow tracking and explored machine-learning approaches for outgoing-stock prediction.
+    tags:
+      - Data Engineering
+      - AWS Databricks
+      - Power BI
+      - Machine Learning
 
 skills:
   - name: Programming & Tools
