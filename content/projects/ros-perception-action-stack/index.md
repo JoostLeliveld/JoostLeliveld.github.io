@@ -7,7 +7,7 @@ tags:
   - robotics
   - computer-vision
   - ros
-  - systems-integration
+  - embedded-control
   - featured
 authors:
   - me
@@ -20,7 +20,7 @@ tech_stack:
   - Motor Control
 links:
   - type: custom
-    url: report.pdf
+    url: /projects/ros-perception-action-stack/report.pdf
     label: Embedded Visual Control report
     icon: document-text
 featured: true

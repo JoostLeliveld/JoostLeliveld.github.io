@@ -28,7 +28,11 @@ links:
 featured: true
 status: "In progress"
 role: "Graduation Project"
-gallery: []
+gallery:
+  - type: image
+    src: featured.png
+    alt: Gazebo warehouse scene viewed from the fixed external camera
+    caption: The seeded warehouse benchmark as the fixed external camera sees it. The robot is the small marker on the right; the shelving is what makes parts of the floor unobservable, which is exactly what the reliability model has to capture.
 ---
 
 ## Overview

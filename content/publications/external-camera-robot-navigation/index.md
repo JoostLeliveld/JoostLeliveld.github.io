@@ -14,10 +14,10 @@ abstract: |
   The project focuses on the practical limits of external perception: camera viewpoint, visibility, calibration, and sensor reliability. Simulation experiments are used to compare navigation behavior under controlled variations in perception quality and environment setup.
 summary: "In-progress MSc graduation project on external-camera mobile robot navigation."
 tags:
-  - Robotics
-  - Computer Vision
-  - Sensor Fusion
-  - Autonomous Navigation
+  - robotics
+  - computer-vision
+  - sensor-fusion
+  - autonomous-navigation
 featured: true
 url_pdf: ""
 url_slides: ""

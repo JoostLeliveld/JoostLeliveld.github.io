@@ -7,6 +7,8 @@ tags:
   - control
   - machine-learning
   - reinforcement-learning
+  - gaussian-processes
+  - learning-based-control
   - featured
 authors:
   - me
@@ -20,17 +22,17 @@ tech_stack:
   - DDPG
 links:
   - type: custom
-    url: report.pdf
+    url: /projects/learning-unbalanced-disk-control/report.pdf
     label: Final report
     icon: document-text
 featured: true
-status: "Private code"
+status: "Course project"
 role: "Learning-based control project"
 gallery:
   - type: video
     src: media/unbalanced-disk-demo.mp4
     mime: video/mp4
-    caption: Short project clip associated with the unbalanced-disk learning and control experiments.
+    caption: The physical unbalanced disk setup used for the swing-up and stabilization experiments. Course policy keeps the code private, so the report is the full record of the work.
 ---
 
 ## Overview

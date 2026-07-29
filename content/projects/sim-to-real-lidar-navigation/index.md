@@ -6,7 +6,6 @@ summary: "Isaac Lab reinforcement learning for LiDAR-based Origin One navigation
 tags:
   - robotics
   - reinforcement-learning
-  - sim-to-real
   - autonomous-navigation
   - featured
 authors:
@@ -24,7 +23,7 @@ links:
     label: Team Repository
   - type: custom
     url: https://github.com/TUe-Ray/Wheeled-lab
-    label: Related Origin Integration
+    label: WheeledLab (upstream project we built on)
     icon: link
 featured: true
 status: "Team project"

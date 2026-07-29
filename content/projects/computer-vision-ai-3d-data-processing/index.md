@@ -10,7 +10,6 @@ tags:
   - machine-learning
   - ros
   - 3d-data
-  - ai-systems
   - featured
 authors:
   - me
@@ -21,17 +20,19 @@ tech_stack:
   - Neural Networks
   - Autoencoders
   - Computer Vision
+# Root-absolute paths: the portfolio/collection blocks resolve relative link
+# URLs against the site root, so `neural-networks.pdf` would 404 on the cards.
 links:
   - type: custom
-    url: neural-networks.pdf
+    url: /projects/computer-vision-ai-3d-data-processing/neural-networks.pdf
     label: Neural networks report
     icon: document-text
   - type: custom
-    url: point-cloud-filtering.pdf
+    url: /projects/computer-vision-ai-3d-data-processing/point-cloud-filtering.pdf
     label: Point-cloud filtering report
     icon: document-text
   - type: custom
-    url: autoencoder-anomaly-detection.pdf
+    url: /projects/computer-vision-ai-3d-data-processing/autoencoder-anomaly-detection.pdf
     label: Autoencoder anomaly report
     icon: document-text
 featured: true

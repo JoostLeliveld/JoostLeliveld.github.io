@@ -4,11 +4,9 @@ date: 2023-06-30
 weight: 80
 summary: "Bachelor End Project on physical-activity detection from raw smartwatch data."
 tags:
-  - earlier-work
   - machine-learning
   - signal-processing
-  - biomedical-engineering
-  - data-science
+  - wearable-sensing
 authors:
   - me
 tech_stack:
@@ -19,7 +17,7 @@ tech_stack:
   - Wearable Sensing
 links:
   - type: custom
-    url: report.pdf
+    url: /projects/physical-activity-detection/report.pdf
     label: Bachelor thesis report
     icon: document-text
 featured: false

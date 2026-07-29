@@ -6,7 +6,6 @@ tags:
   - robotics
   - computer-vision
   - sensor-fusion
-  - research-notes
 authors:
   - me
 featured: true

@@ -1,0 +1,14 @@
+{{/* Overrides the theme partial so utility tags (e.g. `featured`, used only to
+     drive the homepage portfolio filter buttons) stay out of the visible tag
+     list. Term pages opt out with `hidden: true` in content/tags/<term>/_index.md. */}}
+{{ $terms := slice }}
+{{ range .GetTerms "tags" }}
+  {{ if not .Params.hidden }}{{ $terms = $terms | append . }}{{ end }}
+{{ end }}
+{{ if $terms }}
+<div class="flex flex-wrap justify-center gap-2">
+  {{ range $terms }}
+  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+  {{ end }}
+</div>
+{{ end }}

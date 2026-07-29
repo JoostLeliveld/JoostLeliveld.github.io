@@ -26,6 +26,9 @@ sections:
         - text: Contact
           url: "#contact"
           icon: envelope
+        - text: Résumé
+          url: "/uploads/resume.pdf"
+          icon: document-text
     design:
       style: centered
       avatar_shape: circle
@@ -50,10 +53,10 @@ sections:
           tag: featured
         - name: Robotics
           tag: robotics
-        - name: AI Systems
-          tag: ai-systems
-        - name: Earlier Work
-          tag: earlier-work
+        - name: Computer Vision
+          tag: computer-vision
+        - name: Machine Learning
+          tag: machine-learning
         - name: All
           tag: '*'
       default_button_index: 0
@@ -77,7 +80,7 @@ sections:
   - block: collection
     id: publications
     content:
-      title: Reports and Writeups
+      title: Research & Reports
       subtitle: 'Thesis material, reports, and technical notes'
       text: ''
       filters:
