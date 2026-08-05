@@ -26,9 +26,6 @@ sections:
         - text: Contact
           url: "#contact"
           icon: envelope
-        - text: Résumé
-          url: "/uploads/resume.pdf"
-          icon: document-text
     design:
       style: centered
       avatar_shape: circle
