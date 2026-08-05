@@ -9,7 +9,7 @@ postnominals: []
 status:
   icon: "🎓"
 role: MSc AI & Engineering Systems student
-email: j.j.p.leliveld@student.tue.nl
+email: joost@leliveld.us
 bio: |
   I work on robotics systems that connect perception, simulation, planning, and control.
   I am currently doing an MSc graduation project at Eindhoven University of Technology on mobile robot navigation from external camera observations.
@@ -21,7 +21,7 @@ affiliations:
 
 links:
   - icon: at-symbol
-    url: mailto:j.j.p.leliveld@student.tue.nl
+    url: mailto:joost@leliveld.us
     label: E-mail
   - icon: brands/github
     url: https://github.com/JoostLeliveld

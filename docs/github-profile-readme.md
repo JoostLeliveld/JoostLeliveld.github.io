@@ -23,4 +23,4 @@ Python, ROS 2, Gazebo, Isaac Lab, OpenCV, YOLO, NumPy, SciPy, Gaussian Processes
 - Website: <https://joostleliveld.github.io/>
 - GitHub: <https://github.com/JoostLeliveld>
 - LinkedIn: <https://www.linkedin.com/in/joost-leliveld-142a16244/>
-- Email: <j.j.p.leliveld@student.tue.nl>
+- Email: <joost@leliveld.us>

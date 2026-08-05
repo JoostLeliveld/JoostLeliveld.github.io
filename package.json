@@ -5,7 +5,7 @@
   "packageManager": "pnpm@10.14.0",
   "description": "Modern developer portfolio template for Hugo Blox with Tailwind CSS v4 - Free version",
   "scripts": {
-    "dev": "hugo server --disableFastRender",
+    "dev": "hugo server --disableFastRender --bind 0.0.0.0",
     "build": "hugo --minify && pnpm run pagefind",
     "pagefind": "pagefind --site public"
   },

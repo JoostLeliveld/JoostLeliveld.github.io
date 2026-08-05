@@ -103,7 +103,7 @@ sections:
       subtitle: ""
       text: |-
         Reach out if you want to talk about anything you found interesting on this page.
-      email: j.j.p.leliveld@student.tue.nl
+      email: joost@leliveld.us
       autolink: true
     design:
       columns: '1'
