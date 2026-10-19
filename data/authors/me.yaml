@@ -8,11 +8,12 @@ name:
 postnominals: []
 status:
   icon: "🎓"
-role: MSc AI & Engineering Systems student
+role: Robotics & Applied AI Engineer
 email: joost@leliveld.us
 bio: |
   I work on robotics systems that connect perception, simulation, planning, and control.
-  I am currently doing an MSc graduation project at Eindhoven University of Technology on mobile robot navigation from external camera observations.
+  I graduated cum laude from the MSc AI & Engineering Systems at Eindhoven University of Technology, with a thesis on camera-network modelling for belief-space robot navigation, and presented the resulting work at IWAI 2026.
+  I am looking for roles in robot learning, perception, and embodied AI (industry or PhD) in Eindhoven, Utrecht, or Zurich.
   I like projects where the interesting part is the whole loop: sensing, uncertainty, decisions, and what finally happens in the robot or simulator.
 
 affiliations:
@@ -43,24 +44,26 @@ education:
   - degree: MSc AI and Engineering Systems
     institution: Eindhoven University of Technology
     start: 2024-09-01
-    end: 2026-09-30
+    end: 2026-10-31
     summary: |
+      Graduated cum laude, with Honors (TU/e Honors Programme, assessed Excellent). Thesis "Camera-Network Modelling for Belief-Space Robot Navigation", graded 9/10.
       Project-based master's program in the High Tech Systems and Robotics track, combining AI, control, robotics, and embedded engineering systems.
       Relevant coursework includes Computer Vision AI and 3D Data Processing, Machine Learning for Systems and Control, Reinforcement Learning, Embedded Visual Control, Statistical Signal Processing, and Control Principles for Linear Systems.
 
 experience:
-  - role: MSc Thesis Researcher - Autonomous Robotics and Safe Learning
-    organization: Eindhoven University of Technology
+  - role: MSc Thesis Researcher - Robotics & Computer Vision
+    organization: Eindhoven University of Technology (BIASlab)
     logo: "/uploads/experience/tue.png"
     start: 2026-02-01
+    end: 2026-10-31
     summary: |
-      Designing autonomous navigation for a mobile robot using external-camera observations, lidar-based obstacle avoidance, and uncertainty-aware planning.
-      The work connects camera-frame mapping, ROS 2, Gazebo, PyTorch, and safe learning ideas into a robot-facing research stack.
+      Built a ROS 2/Gazebo navigation stack in which fixed cameras detect a TurtleBot3 with YOLO and calibrated image-to-ground-plane estimates update the robot's belief.
+      A spatial Gaussian Process models where the cameras are reliable and scales the observation covariance in an Expected Free Energy planner. First-author paper presented (oral) at IWAI 2026.
     tags:
       - ROS 2
       - Gazebo
       - Computer Vision
-      - Safe Learning
+      - Gaussian Processes
 
   - role: AI Intern - Reinforcement Learning in Robotics
     organization: Avular
@@ -132,4 +135,8 @@ languages:
     level: 5
     label: Fluent
 
-awards: []
+awards:
+  - title: MSc cum laude, with Honors
+    awarder: Eindhoven University of Technology
+    date: 2026-10-01
+    summary: Graduated cum laude (GPA 8.6/10) and completed the TU/e Honors Programme, assessed Excellent.

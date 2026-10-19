@@ -26,8 +26,8 @@ links:
     url: https://github.com/JoostLeliveld/UnembodiedNavigation
     label: Repository
 featured: true
-status: "In progress"
-role: "Graduation Project"
+status: "Completed (Oct 2026)"
+role: "MSc Graduation Project (9/10)"
 gallery:
   - type: image
     src: featured.png
@@ -37,7 +37,7 @@ gallery:
 
 ## Overview
 
-This graduation project studies mobile robot navigation from a fixed external camera. I use Gazebo, YOLO-based robot detection, BEV state estimation, and a Gaussian Process reliability model so the planner can account for where camera observations are likely to fail.
+This graduation project (thesis: [Camera-Network Modelling for Belief-Space Robot Navigation](/publications/external-camera-robot-navigation/); paper: [IWAI 2026](/publications/iwai2026-efe-camera-reliability/)) studies mobile robot navigation from a fixed external camera. I use Gazebo, YOLO-based robot detection, BEV state estimation, and a Gaussian Process reliability model so the planner can account for where camera observations are likely to fail.
 
 {{< project-gallery >}}
 

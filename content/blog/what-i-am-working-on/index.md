@@ -13,7 +13,9 @@ featured: true
 
 This site is a place for the projects, reports, and technical notes I want to keep visible while working on robotics and AI engineering systems.
 
-Right now my main focus is my MSc graduation project at Eindhoven University of Technology. I am working on mobile robot navigation using observations from an external fixed camera, which means combining camera geometry, localization, sensor fusion, and planning/control into one experimental pipeline.
+Update (October 2026): I graduated cum laude and presented the first paper from this work at [IWAI 2026](/publications/iwai2026-efe-camera-reliability/). The text below describes the project as it was in June.
+
+My main focus was my MSc graduation project at Eindhoven University of Technology. I worked on mobile robot navigation using observations from an external fixed camera, which means combining camera geometry, localization, sensor fusion, and planning/control into one experimental pipeline.
 
 The problems I am most interested in are the ones that sit between clean theory and messy robotic reality: what the robot can actually observe, how reliable that observation is, and how a planner should behave when perception is useful but imperfect.
 

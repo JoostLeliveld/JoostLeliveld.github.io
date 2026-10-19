@@ -21,7 +21,7 @@ hugoblox:
     # Short tagline displayed on your site
     tagline: "Robotics, computer vision, and learning-based control"
     # Site meta description for search engines and social sharing
-    description: "Personal site of Joost Leliveld, an MSc AI & Engineering Systems student at Eindhoven University of Technology working on robotics, computer vision, sensor fusion, and learning-based control."
+    description: "Personal site of Joost Leliveld, a robotics and applied AI engineer (MSc AI & Engineering Systems, TU/e, cum laude) working on robotics, computer vision, sensor fusion, and learning-based control."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: ""                          # Twitter/X handle for Twitter Cards (without @)
