@@ -79,16 +79,17 @@ experience:
       - PyTorch
       - AWS
 
-  - role: Data Engineer / Data Analyst
+  - role: Data Scientist
     organization: KORSIT
     logo: "/uploads/experience/korsit.jpeg"
     start: 2023-11-01
     end: 2024-06-30
     summary: |
-      Worked in data engineering and analytics, including a full-time period focused on migration work toward AWS Databricks and pipelines from raw data to Power BI dashboards.
-      Also helped improve stock-flow tracking and explored machine-learning approaches for outgoing-stock prediction.
+      Connected the company's SQL Server to AWS Databricks and helped set up the data partitions, using SQL and PySpark in Databricks notebooks.
+      Built Power BI dashboards for accounting, procurement and management, improved stock-flow tracking, and developed an LSTM model to predict outgoing stock.
     tags:
-      - Data Engineering
+      - SQL
+      - PySpark
       - AWS Databricks
       - Power BI
       - Machine Learning
