@@ -50,5 +50,5 @@ Team internship project on LiDAR-based mobile robot navigation for the Origin On
 
 ## What I Learned
 
-- Sim-to-real work is mostly interface discipline: observations, actions, frames, and control assumptions all have to survive the jump between tools.
-- A policy is only one part of the system; training setup, export path, and robot constraints shape whether it is usable.
+- Most sim-to-real work is getting the interfaces right: observations, actions, frames, and control assumptions all have to survive the jump between tools.
+- A policy is only one part of the system. Training setup, export path, and robot constraints shape whether it is usable.

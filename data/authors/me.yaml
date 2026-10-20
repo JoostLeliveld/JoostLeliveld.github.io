@@ -46,9 +46,30 @@ education:
     start: 2024-09-01
     end: 2026-10-31
     summary: |
-      Graduated cum laude, with Honors (TU/e Honors Programme, assessed Excellent). Thesis "Camera-Network Modelling for Belief-Space Robot Navigation", graded 9/10.
+      Graduated cum laude (GPA 8.6/10) and completed the TU/e Honors Programme, assessed Excellent. Thesis "Camera-Network Modelling for Belief-Space Robot Navigation", graded 9/10.
       Project-based master's program in the High Tech Systems and Robotics track, combining AI, control, robotics, and embedded engineering systems.
       Relevant coursework includes Computer Vision AI and 3D Data Processing, Machine Learning for Systems and Control, Reinforcement Learning, Embedded Visual Control, Statistical Signal Processing, and Control Principles for Linear Systems.
+
+  - degree: Academic Exchange
+    institution: Polytechnique Montréal, Canada
+    start: 2025-08-01
+    end: 2025-12-31
+    summary: |
+      Graduate courses in reinforcement learning, software systems and model-driven engineering, and a directed reading project on visual localization. A average.
+
+  - degree: Pre-master Data Science and Artificial Intelligence
+    institution: Eindhoven University of Technology
+    start: 2023-08-01
+    end: 2024-02-29
+    summary: |
+      Bridge from biomedical engineering to AI, with 10/10 for Data Mining and Machine Learning and for Software Development for Engineers.
+
+  - degree: BSc Biomedical Engineering
+    institution: Eindhoven University of Technology
+    start: 2020-08-01
+    end: 2023-07-31
+    summary: |
+      Computational Biology. Bachelor thesis on detecting physical activity from raw smartwatch data with Hidden Markov Models.
 
 experience:
   - role: MSc Thesis Researcher - Robotics & Computer Vision
@@ -137,7 +158,7 @@ languages:
     label: Fluent
 
 awards:
-  - title: MSc cum laude, with Honors
+  - title: MSc cum laude and TU/e Honors Programme
     awarder: Eindhoven University of Technology
     date: 2026-10-01
     summary: Graduated cum laude (GPA 8.6/10) and completed the TU/e Honors Programme, assessed Excellent.

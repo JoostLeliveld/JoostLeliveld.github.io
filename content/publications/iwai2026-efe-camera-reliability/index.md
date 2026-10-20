@@ -27,4 +27,4 @@ url_code: "https://github.com/JoostLeliveld/iwai2026-camera-reliability-efe"
 
 [Download the paper (PDF)](leliveld2026iwai_accepted.pdf) · [Code on GitHub](https://github.com/JoostLeliveld/iwai2026-camera-reliability-efe) · [Related MSc thesis and video](/publications/external-camera-robot-navigation/)
 
-The PDF is the accepted manuscript. The Version of Record will appear in the Springer proceedings; the DOI will be added here once published.
+The PDF is the accepted manuscript. The Version of Record will appear in the Springer proceedings. The DOI will be added here once it is published.

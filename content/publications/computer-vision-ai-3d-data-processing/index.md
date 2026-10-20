@@ -39,6 +39,6 @@ Three separate reports, moving from 2D model behavior toward robot-facing 3D per
 
 The **neural networks** report works through MLPs and segmentation losses, including why focal loss helps on imbalanced data and how precision and recall move against each other as the threshold changes.
 
-The **point cloud** report generates point clouds from a stereo camera and filters them in ROS. It is the most sensor-honest of the three: noise sources, dropout, and the trade-off between filtering aggressively and deleting real structure are all visible in the output.
+The **point cloud** report generates point clouds from a stereo camera and filters them in ROS. It shows the sensor problems most clearly: noise sources, dropout, and the trade-off between filtering aggressively and deleting real structure are all visible in the output.
 
 The **autoencoder** report uses reconstruction error for anomaly detection, with denoising, threshold selection, and ROC/AUC evaluation. The conclusion is that the architecture mattered less than where the threshold was placed and what a false alarm actually costs.

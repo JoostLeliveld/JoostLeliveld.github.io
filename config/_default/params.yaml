@@ -120,12 +120,11 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   copyright:
     # Copyright notice - supports {year}, {name}, {license} placeholders
-    notice: "© {year} {name}. This work is licensed under {license}"
+    # No site-wide Creative Commons licence: the IWAI 2026 accepted manuscript
+    # may not be shared under a CC licence (Springer licence to publish, clause c).
+    notice: "© {year} {name}. All rights reserved. Published papers are subject to their publishers' terms."
     license:
-      type: cc                          # cc | custom
-      allow_derivatives: false
-      share_alike: true
-      allow_commercial: false
+      type: ""                          # cc | custom
 
   # ────────────────────────────────────────────────────────────────────────────
   # SEO

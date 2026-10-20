@@ -55,7 +55,7 @@ Embedded Visual Control project on a Jetson-based RC car. The stack turns camera
 
 ## What I Learned
 
-- Integration is its own engineering problem; a good detector is not enough.
+- Integration is its own engineering problem. A good detector is not enough.
 - ROS boundaries help only when topics, frames, and node responsibilities stay simple.
 
 ## Report

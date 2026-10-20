@@ -31,4 +31,4 @@ Free-living accelerometer data from elderly diabetes patients is noisy, unlabele
 
 It covers feature extraction from raw accelerometer and orientation signals, the smoothing and preprocessing that noisy wrist-worn data needs, and patient-specific HMMs fitted per participant. Results are compared against both self-reported activity and a traditional cut-points baseline.
 
-The honest finding is about evaluation rather than modeling: the HMM reached higher recall, but recall only means something once you understand how much the model overestimates, and participant-level variation was large enough that a single global threshold was never going to work.
+The main finding is about evaluation: the HMM reached higher recall, but recall only means something once you understand how much the model overestimates, and participant-level variation was large enough that a single global threshold was never going to work.

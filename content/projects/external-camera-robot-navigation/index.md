@@ -2,7 +2,7 @@
 title: "Visibility-Aware Navigation from External Cameras"
 date: 2026-06-15
 weight: 10
-summary: "External-camera robot navigation with visibility-aware planning uncertainty."
+summary: "MSc thesis: a warehouse robot that navigates with fixed wall cameras and plans around their blind spots."
 tags:
   - robotics
   - computer-vision
@@ -31,30 +31,29 @@ role: "MSc Graduation Project (9/10)"
 gallery:
   - type: image
     src: featured.png
-    alt: Gazebo warehouse scene viewed from the fixed external camera
-    caption: The seeded warehouse benchmark as the fixed external camera sees it. The robot is the small marker on the right; the shelving is what makes parts of the floor unobservable, which is exactly what the reliability model has to capture.
+    alt: Gazebo warehouse scene viewed from one of the wall cameras
+    caption: The simulated warehouse as one wall camera sees it. The robot is the small marker on the right. The shelving hides parts of the floor, which is what the camera accuracy model has to capture.
 ---
 
 ## Overview
 
-This graduation project (thesis: [Camera-Network Modelling for Belief-Space Robot Navigation](/publications/external-camera-robot-navigation/); paper: [IWAI 2026](/publications/iwai2026-efe-camera-reliability/)) studies mobile robot navigation from a fixed external camera. I use Gazebo, YOLO-based robot detection, BEV state estimation, and a Gaussian Process reliability model so the planner can account for where camera observations are likely to fail.
+My MSc graduation project at BIASlab, TU/e. A mobile robot in a simulated warehouse is localized by five fixed wall cameras instead of its own sensors. How well a camera sees the robot depends on distance, viewing angle and what is in the way, so I learned where each camera can be trusted and used that in both localization and route planning.
+
+Thesis: [Camera-Network Modelling for Belief-Space Robot Navigation](/publications/external-camera-robot-navigation/) (graded 9/10). Paper: [IWAI 2026](/publications/iwai2026-efe-camera-reliability/).
 
 {{< project-gallery >}}
 
+{{< project-video src="/publications/external-camera-robot-navigation/thesis_video.mp4" mime="video/mp4" caption="One-minute overview made from the recorded Gazebo runs." >}}
+
 ## What I Built
 
-- ROS/Gazebo stack for external-camera localization and robot navigation.
-- Detector-to-pixel observation pipeline with BEV state estimation.
-- GP reliability map used as state-dependent camera covariance.
-- Seeded warehouse benchmark comparing constant and visibility-aware covariance.
+- A ROS 2 and Gazebo warehouse simulation with five wall cameras and a TurtleBot3.
+- A YOLO detector that finds the robot in each camera image, and a calibrated mapping from image to floor position.
+- Gaussian Process models of how accurate each camera is across the floor.
+- Camera fusion in an EKF, weighted by those accuracy models.
+- An Expected Free Energy route planner in CasADi that prefers routes where the cameras can track the robot.
+- A reproducible pipeline: dataset capture, detector training, model fitting and seeded test campaigns.
 
-## Result Snapshot
+## Result
 
-| Condition | Planner | Clean reaches | Collisions | Other outcomes |
-| --- | --- | ---: | ---: | --- |
-| C1 | constant camera covariance | 12/20 | 8/20 | none |
-| C2 | visibility-aware covariance | 16/20 | 2/20 | 1 near-success, 1 infrastructure-invalid |
-
-## Takeaway
-
-Perception quality becomes a planning variable once it affects state uncertainty. The interesting part is not just detecting the robot, but making the planner honest about when the camera view is unreliable.
+In the paper's 40-run Gazebo campaign, the planner with the learned camera model reached all 20 goals without leaving the driving area. The planner that assumes the same camera accuracy everywhere reached 15 of 20 and left the driving area in the other five, all on the task with poor camera coverage. In the thesis, the learned model also kept the robot on track when one camera was switched off. All results are from simulation.

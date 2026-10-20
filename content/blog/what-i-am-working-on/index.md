@@ -1,7 +1,7 @@
 ---
 title: "What I Am Working On"
-date: 2026-06-15
-summary: "A short note on my current focus: robotics, external-camera perception, and autonomous navigation."
+date: 2026-10-20
+summary: "Where I am now: MSc finished, IWAI 2026 paper presented, looking for the next step in AI and robotics."
 tags:
   - robotics
   - computer-vision
@@ -11,12 +11,8 @@ authors:
 featured: true
 ---
 
-This site is a place for the projects, reports, and technical notes I want to keep visible while working on robotics and AI engineering systems.
+In October 2026 I finished my MSc AI & Engineering Systems at TU/e, cum laude. My thesis was about robots that navigate with external cameras: I learned where each camera can be trusted and used that in localization and route planning. Part of this work became a paper that I presented at [IWAI 2026](/publications/iwai2026-efe-camera-reliability/). The [thesis page](/publications/external-camera-robot-navigation/) has a short video of the simulation.
 
-Update (October 2026): I graduated cum laude and presented the first paper from this work at [IWAI 2026](/publications/iwai2026-efe-camera-reliability/). The text below describes the project as it was in June.
+Next I am travelling for a while, and after that I am looking for a role in AI and robotics with real technical challenges. The problems I like most sit where perception, uncertainty and planning meet, on systems that have to work outside a notebook.
 
-My main focus was my MSc graduation project at Eindhoven University of Technology. I worked on mobile robot navigation using observations from an external fixed camera, which means combining camera geometry, localization, sensor fusion, and planning/control into one experimental pipeline.
-
-The problems I am most interested in are the ones that sit between clean theory and messy robotic reality: what the robot can actually observe, how reliable that observation is, and how a planner should behave when perception is useful but imperfect.
-
-I expect to use these notes for short writeups on experiments, simulation setup, ROS 2, computer vision details, and the small design choices that are easy to forget once a system finally works.
+I will use this section for short notes on experiments, ROS 2, computer vision and the small design choices that are easy to forget once a system works.
