@@ -31,4 +31,6 @@ links:
 
 MSc thesis at BIASlab, Eindhoven University of Technology, supervised by Dr. W.M. Kouw and Dr. Ö. Arslan. Defended on 6 October 2026, graded 9/10.
 
+{{< project-video src="thesis_video.mp4" mime="video/mp4" caption="One-minute overview of the thesis, made from the recorded Gazebo simulation runs: five wall cameras, YOLO detection, learned camera accuracy maps, and route choice when a camera fails." >}}
+
 This page gives a public summary; the full thesis is not published. A companion paper is in preparation. Related: the [IWAI 2026 paper](/publications/iwai2026-efe-camera-reliability/).
